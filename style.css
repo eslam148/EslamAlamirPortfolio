@@ -1,0 +1,332 @@
+body{
+    /* background-color: #fbe2e3; */
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    /* font-weight: <weight>; */
+    font-style: normal;
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+        transition-timing-function: cubic-bezier(.4,0,.2,1);
+        transition-duration: .15s;
+    }
+
+section{
+    margin-block: 5%;
+}
+/* --------------------start navbar style-------------------- */
+#topNav{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 1rem;
+}
+.nav{
+    /* background-color: white; */
+    backdrop-filter: blur(0.5rem);
+    
+    opacity: 0.8;
+    box-shadow: 5px 5px 5px 5px #e5e7eb;
+    display: flex;
+    color: rgb(107 114 128);
+    border: 0 solid #e5e7eb;
+    border-radius: 999px;
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+    width: 45%;
+
+}
+.nav-list{
+    display: flex;
+    list-style: none;
+    padding: 0;
+
+}
+.nav-item{
+    margin-inline:20px;
+}
+.nav-item a{
+    text-decoration: none;
+    color: rgb(107 114 128);
+}
+.nav-item a:hover{
+    color: rgb(3 7 18);
+}
+.nav-logo{
+  
+    color: rgb(3 7 18);
+}
+/* --------------------End navbar style-------------------- */
+/* --------------------Start main style-------------------- */
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top:5% ;
+    text-align: center;
+    width: 45%;
+
+    font-size: 1.25rem; /* 20px */
+    line-height: 1.75rem; /* 28px */
+
+}
+.home>img{
+    width: 15%;
+    border-radius: 999px;
+    border: 7px solid white;
+}
+.myinfo *{
+    display: inline-block;
+    border: 1px solid black;
+    box-shadow: 5px 5px 5px 5px #e5e7eb;
+    border-radius: 999px;
+    padding: 1rem;
+    margin-inline: 0.5rem;
+    text-decoration: none;
+    color:rgb(24 24 27);
+}
+.myinfo :first-child{
+    background-color:rgb(24 24 27);;
+    color: white;
+    
+}
+.myinfo *:hover{
+    transform: scale(1.2);
+}
+/* -------------------start about me-------------------------------  */
+.about{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+}
+.home p{
+    line-height: 46px;
+}
+.about img{
+   width: 7%;
+    
+}
+.about img:hover{
+    transform: scale(1.2);
+}
+/* -------------------End about me-------------------------------  */
+
+/* -------------------start Projects-------------------------------  */
+.filter-btn{
+    display: flex;
+    flex-wrap: wrap;
+}
+.filter-btn *{
+    text-transform: uppercase;
+    width: 18%;
+    margin-inline: 1%;
+    margin-block: 0.5%;
+
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+    border-radius: 999px;
+    padding: 5px;
+ }
+.filter-btn *:hover{
+    background-color:rgb(229 231 235); 
+}
+
+.project{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: rgb(243 244 246);
+    margin-block:5% ;
+    border-radius: 3%;
+}
+.project:hover{
+    background-color: rgb(229 231 235);
+}
+  .project-left , .project-right {
+    width: 44%;
+    padding-inline:3% ;
+    padding-block: 2%;
+
+}
+.project-left p{
+    color: rgb(55 65 81);
+    font-size: 1.125rem; /* 18px */
+    line-height: 1.75rem; /* 28px */
+    text-align: start;
+}
+.project-right img{
+    width: 100%;
+}
+.tools *{
+    margin:1%;
+    background-color: rgba(0, 0, 0, .7);
+    color:white;
+    border-radius: 9999px;
+    padding-inline: 2%;
+    font-size: 0.9rem;
+}
+
+/* -------------------End Projects-------------------------------  */
+/* -------------------Start My Skilles-------------------------------  */
+
+.myskilles{
+    width: 70%;
+    text-align: center;
+}
+.myskilles .skilles{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* width: 11%; */
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.75rem;
+    padding: 0.8%;
+    background-color: white;
+    font-size: 1.25rem;
+    margin-inline: 0.5%;
+}
+.myskilles .skilles *{
+    margin-inline:0.2rem;
+}
+.myskilles .skilles img{
+    width: 2rem;
+}
+.List-Skilles{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* -------------------End My Skilles-------------------------------  */
+
+/* -------------------Start Certificaciones-------------------------------  */
+.Certificaciones{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Certificaciones-contanter{
+    width: 52%;
+
+    border: 20px solid rgb(243 244 246);
+    border-radius: 0.5rem
+   /*  */
+}
+.Certificaciones-contanter:hover{
+    border-color: rgb(229 231 235);
+}
+.Certificaciones-contanter img{
+    width: 100%;
+
+}
+
+
+/* -------------------End Certificaciones-------------------------------  */
+
+/* -------------------Start My Experience-------------------------------  */
+.Experience{
+    width: 70%;
+    text-align: center;
+}
+.timeline{
+    position: relative;
+    padding-block: 32px;
+}
+.timeline::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 4px;
+    background-color: #e5e7eb;
+    left: 50%;
+    margin-left: -2px;
+}
+.item-Experience{
+    display: flex;
+}
+.dicription{
+    width: 45%;
+    padding-block: 1rem;
+
+}
+.dicription-Icon{
+    text-align: center;
+    width: 5rem;
+    height: 5rem;
+    margin-inline-start: 1.5%;
+    z-index: 2;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 0 4px #fff, inset 0 2px 0 rgba(0, 0, 0, .08), 0 3px 0 4px rgba(0, 0, 0, .05);
+   
+}
+.dicription-Icon img{
+    width: 40px;
+    height: 40px;
+}
+.dicription-date{
+    width: 45%;
+    padding-block: 2.3rem;
+    margin-inline-start: 15px;
+}
+
+/* -------------------End My Experience-------------------------------  */
+.myinfo button{
+    background-color: white;
+}
+.inputs-format{
+ width: 100%;
+ background-color: white;
+ border-width: 1px;
+ border-color: rgba(0, 0, 0, .1);
+ border-radius: 0.5rem; 
+  height: 40px;
+ margin-block:2%;
+ padding: 1.5%;
+}
+.message{
+    height: 160px;
+    resize: vertical;
+}
+/* --------------------End main style-------------------- */
+
+/* --------------------Responsive style-------------------- */
+footer{
+    text-align: center;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 800px) {
+    .nav{
+        width: 100%;
+    }
+    .nav-item{
+        margin-inline:5px;
+        font-size: 9px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* @media only screen and (min-width: 600px) {} */
+
+/* Medium devices (landscape tablets, 768px and up) */
+/* @media only screen and (min-width: 768px) {} */
+
+/* Large devices (laptops/desktops, 992px and up) */
+/* @media only screen and (min-width: 992px) {} */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* @media only screen and (min-width: 1200px) {} */
