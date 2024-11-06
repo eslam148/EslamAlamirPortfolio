@@ -71,7 +71,7 @@ section{
     align-items: center;
     margin-top:5% ;
     text-align: center;
-    width: 45%;
+    width: 50%;
 
     font-size: 1.25rem; /* 20px */
     line-height: 1.75rem; /* 28px */
@@ -82,23 +82,48 @@ section{
     border-radius: 999px;
     border: 7px solid white;
 }
-.myinfo *{
+.MyName{
+    font-size: 3rem;
+}
+#job-title{
+    
+    font-size: 2.5rem;
+
+}
+#job-title::after{
+    content: "|";
+     animation: blink 0.7s steps(1) infinite;
+}
+
+.myinfo a{
     display: inline-block;
     border: 1px solid black;
     box-shadow: 5px 5px 5px 5px #e5e7eb;
     border-radius: 999px;
-    padding: 1rem;
+    padding: 0.6rem;
     margin-inline: 0.5rem;
     text-decoration: none;
     color:rgb(24 24 27);
+    padding-inline: 2rem;
 }
-.myinfo :first-child{
+
+.myinfo a:first-child{
     background-color:rgb(24 24 27);;
     color: white;
     
 }
+ 
 .myinfo *:hover{
+    transition-duration: 1s;
     transform: scale(1.2);
+}
+.arrow{
+    animation: moveRight 1s infinite alternate;
+}
+.download{
+    
+    animation: moveDown 1s infinite alternate;
+
 }
 /* -------------------start about me-------------------------------  */
 .about{
@@ -115,6 +140,7 @@ section{
     
 }
 .about img:hover{
+    transition-duration: .s;
     transform: scale(1.2);
 }
 /* -------------------End about me-------------------------------  */
@@ -137,6 +163,8 @@ section{
     padding: 5px;
  }
 .filter-btn *:hover{
+    transition-duration: 0.5s;
+
     background-color:rgb(229 231 235); 
 }
 
@@ -149,6 +177,8 @@ section{
     border-radius: 3%;
 }
 .project:hover{
+    transition-duration: 0.5s;
+
     background-color: rgb(229 231 235);
 }
   .project-left , .project-right {
@@ -193,6 +223,8 @@ section{
     background-color: white;
     font-size: 1.25rem;
     margin-inline: 0.5%;
+    margin-block: 0.5rem;
+
 }
 .myskilles .skilles *{
     margin-inline:0.2rem;
@@ -204,6 +236,7 @@ section{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    
 }
 
 /* -------------------End My Skilles-------------------------------  */
@@ -223,6 +256,8 @@ section{
    /*  */
 }
 .Certificaciones-contanter:hover{
+    transition-duration: 0.5s;
+
     border-color: rgb(229 231 235);
 }
 .Certificaciones-contanter img{
@@ -330,3 +365,25 @@ footer{
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 /* @media only screen and (min-width: 1200px) {} */
+
+@keyframes moveRight {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(5px);
+    }
+  }
+  @keyframes moveDown {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(5px);
+    }
+  }
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
