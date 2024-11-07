@@ -140,7 +140,7 @@ section{
     
 }
 .about img:hover{
-    transition-duration: .s;
+    transition-duration: 0.5s;
     transform: scale(1.2);
 }
 /* -------------------End about me-------------------------------  */
@@ -322,6 +322,15 @@ section{
 /* -------------------End My Experience-------------------------------  */
 .myinfo button{
     background-color: white;
+    display: inline-block;
+    border: 1px solid black;
+    box-shadow: 5px 5px 5px 5px #e5e7eb;
+    border-radius: 999px;
+    padding: 0.6rem;
+    margin-inline: 0.5rem;
+    text-decoration: none;
+    color:rgb(24 24 27);
+    padding-inline: 2rem;
 }
 .inputs-format{
  width: 100%;
