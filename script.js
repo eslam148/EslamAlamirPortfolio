@@ -21,3 +21,34 @@ function clearAndNext() {
 }
 
 typeWriter(); // Start the initial typing
+
+const sections = document.querySelectorAll('.scroll-section');
+
+function handleScroll() {
+ 
+    const scrollPosition = window.scrollY;
+    const navLinks = document.querySelectorAll(".nav-item a");
+  
+    document.querySelectorAll("section").forEach(section => {
+      const sectionTop = section.offsetTop - 50; // Adjust offset as needed
+      const sectionBottom = sectionTop + section.offsetHeight;
+  
+      if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+        const currentId = section.getAttribute("id");
+        navLinks.forEach(link => {
+          link.classList.toggle("active", link.getAttribute("href") === `#${currentId}`);
+        });
+      }
+    });
+    sections.forEach(section => {
+        const sectionTop = section.getBoundingClientRect().top;
+        const triggerPoint = window.innerHeight / 1.2; // Adjust for earlier/later animation
+        if (sectionTop < triggerPoint) {
+            section.classList.add('show');
+        }
+    });
+}
+
+window.addEventListener('scroll', handleScroll);
+handleScroll(); // Run on page load in case elements are already in view
+ 
